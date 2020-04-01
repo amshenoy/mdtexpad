@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MD Notebook</title>
+	<title>MDTexPad</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Catamaran|Didact+Gothic|Quattrocento+Sans|Work+Sans|PT+Sans|Lato|Nunito|Consolas&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Catamaran|Didact+Gothic|Quattrocento+Sans|Work+Sans|Nunito&display=swap" rel="stylesheet"> -->
+	<link href="./css/fonts.css" rel="stylesheet">
 	
 	<link href="./assets/css/styles.css" rel="stylesheet">
 	
@@ -12,9 +13,8 @@
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-okaidia.min.css" rel="stylesheet" />
 	
-	
-	<link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
-	<script src="http://tikzjax.com/v1/tikzjax.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css"> -->
+	<!-- <script src="http://tikzjax.com/v1/tikzjax.js"></script> -->
 
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css"> -->
 
@@ -87,7 +87,50 @@ The lobby code is `weloveesports`!
 <!-- Type HTML comments for yourself in the editor -->
 <!-- ### Load Remote File
 <pre data-src="./md_notebook.html"><code class="language-html"></code></pre> -->
+## Tables
+### HTML Table - Fill with Normal Text or Latex
+##### (Note: Latex does not side align)
+#### See [here on Stackoverflow](https://stackoverflow.com/questions/339923/set-cellpadding-and-cellspacing-in-css) for table styling details
+</br>
+<table style="width:100%; text-align: left;">
+  <caption>Figure 1 - Our Customers</caption>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>$$ Jill $$</td>
+    <td>$$ Smith $$</td>
+    <td>$$ 32 $$</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>24</td>
+  </tr>
+</table>
 
+### Latex Table
+\[
+\begin{array}{|c|c|c|}
+\hline
+  \text{Set} & \text{Operation} & \text{Identity} \\ 
+\hline
+   \mathbb{Z} & + & 0 \\
+\hline
+   \mathbb{Q} & + & 0 \\
+\hline
+   \mathbb{R} & + & 0 \\ 
+\hline
+   \mathbb{Z} & \times & 1 \\
+\hline
+   \mathbb{Q} & \times & 1 \\
+\hline
+   \mathbb{R} & \times & 1 \\ 
+\hline
+\end{array}
+\]
 
 ### Plain Image - Pre-sized
 ![Google Logo](https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg)
