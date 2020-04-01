@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MD Notebook</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Catamaran|Didact+Gothic|Quattrocento+Sans|Work+Sans|PT+Sans|Lato|Nunito|Consolas&display=swap" rel="stylesheet">
+	
+	<link href="./assets/css/styles.css" rel="stylesheet">
+	
+	<link href="./assets/css/prism.css" rel="stylesheet" />
+	<!-- <link href="./assets/css/prism-live.css" rel="stylesheet" /> -->
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+	
+	
+	<link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
+	<script src="http://tikzjax.com/v1/tikzjax.js"></script>
+
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css"> -->
+
+</head>
+
+<body>
+
+<!-- <div contenteditable="true" style="display: inline-block;" id="content" class="nb1"> -->
+<textarea id="content" class="nb1 prism-live language-markup" rows="20" cols="70">
+# This is the highest level of the text.
+
+## This is the second highest level of the text.
+
+### Each hash mark creates a new level of text for headers.
+
+#### These are useful for subsections for large chunks of information.
+
+##### There are six different headers you can use for text.
+
+###### This is sixth section!
+
+**This text is bold.**
+
+*This text is in italics.*
+
+_This text is also in italics._
+
+<s>This text has a strike-through applied.</s>
+
+<s>**What if something is really important gets crossed out?**</s>
+
+_It's **pretty easy to <s>apply</s>** multiple styles._
+***
+
+> I body him.
+
+>> There's gonna come a point where you'll forget about what happened and you're gonna wanna come back at me.
+
+>>> Don't get hit
+
+***
+### Any piece of code:
+```
+6XQS8-KLKEH-FTB
+STCBW-2V6V6-9D4
+```
+
+The lobby code is `weloveesports`! 
+
+### Specific Language
+<pre class="language-py">
+	<code>
+	import numpy as np
+	a, b = 1, 2
+	print(str(a+b))
+	</code>
+</pre>
+
+### Line Numbers Customisation
+<pre class="line-numbers language-css" data-start="1">
+    <code>
+        .example {
+            font-family: Georgia, Times, serif;
+            color: #555;
+            text-align: center;
+        }
+    </code>
+</pre>
+
+<!-- Type HTML comments for yourself in the editor -->
+<!-- ### Load Remote File
+<pre data-src="./md_notebook.html"><code class="language-html"></code></pre> -->
+
+
+### Plain Image - Pre-sized
+![Google Logo](https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg)
+
+### Image with Click Link & Sizing
+[<img src="https://www.w3schools.com/w3images/fjords.jpg " width="250"/>](https://www.w3schools.com/w3images/fjords.jpg)
+
+[This text goes to the google homepage!](https://google.com)
+
+***
+
+### Alignment
+
+<div align="center">The derogatory term "scrub" means several different things. One definition is someone (especially a game player) who is not good at something (especially a game). By this definition, we all start out as scrubs, and there is certainly no shame in that. I mean the term differently, though.</div>
+</br>
+
+<div align="right">Now, everyone begins as a poor player-it takes time to learn a game to get to a point where you know what you're doing. There is the mistaken notion, though, that by merely continuing to play or "learn" the game, one can become a top player.</div>
+
+***
+
+# Latex
+
+## Euler's Identity
+
+In mathematics, **Euler's identity** is the equality
+### $$ e^{{\color{red} i} {\color{blue}\pi}} + 1 = 0 $$
+
+### Explanation
+
+Euler's identity is a special case of Euler's formula from complex
+analysis, which states that for any real number $ \theta $,
+
+### $$ e^{{\color{red}i}{\color{blue}\theta}} = \cos {\color{blue}\theta} + {\color{red}i} \sin {\color{blue}\theta} $$
+
+</textarea>
+
+	<div id="render"></div>
+	<div id="actionbar">
+		<input id="download" class="btn" value='Download' type='button'/>
+		<input type="file" id="fileupload" style="display: none;"/>
+		<input id="upload" class="btn" value='Upload' type='button'/>
+		<input id="preview" class="btn" value='Preview' type='button' data-toggle="0"/>
+		<div id="editbar" style="display: none;">
+			<input id="print" class="btn" value='Print' type='button' />
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/js/nbtexme.js"></script>
+	
+	<!-- <script data-manual src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/prism.min.js"></script> -->
+	<script src="./assets/js/prism.js" data-manual></script>
+	<script data-manual src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
+	<!-- <script src="./assets/js/prism-textarea.js"></script>  -->
+	<!-- <script src="./assets/js/prism-live.js?load=html"></script>  -->
+	<script src="./assets/js/app.js"></script>
+	
+</body>
+</html>
