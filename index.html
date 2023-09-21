@@ -13,8 +13,9 @@
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-okaidia.min.css" rel="stylesheet" />
 	
-	<!-- <link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css"> -->
-	<!-- <script src="http://tikzjax.com/v1/tikzjax.js"></script> -->
+    <!-- Not working yet -->
+	<!-- <link rel="stylesheet" type="text/css" href="./assets/css/tikz-fonts.css"> -->
+	<!-- <script src="./assets/js/tikzjax.js"></script> -->
 
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css"> -->
 
@@ -49,11 +50,11 @@ _This text is also in italics._
 _It's **pretty easy to <s>apply</s>** multiple styles._
 ***
 
-> I body him.
+> Hello, I am a quote.
 
->> There's gonna come a point where you'll forget about what happened and you're gonna wanna come back at me.
+>> I am a double quote.
 
->>> Don't get hit
+>>> I don't know what I am.
 
 ***
 ### Any piece of code:
@@ -164,6 +165,26 @@ Euler's identity is a special case of Euler's formula from complex
 analysis, which states that for any real number $ \theta $,
 
 ### $$ e^{{\color{red}i}{\color{blue}\theta}} = \cos {\color{blue}\theta} + {\color{red}i} \sin {\color{blue}\theta} $$
+
+
+<!-- <script type="text/tikz">
+\\begin{tikzpicture}
+${
+
+\def \n {5}
+\def \radius {3cm}
+\def \margin {8} % margin in angles, depends on the radius
+
+\foreach \s in {1,...,\n}
+{
+  \node[draw, circle] at ({360/\n * (\s - 1)}:\radius) {$\s$};
+  \draw[->, >=latex] ({360/\n * (\s - 1)+\margin}:\radius) 
+    arc ({360/\n * (\s - 1)+\margin}:{360/\n * (\s)-\margin}:\radius);
+}
+
+}
+\\end{tikzpicture}
+</script> -->
 
 </textarea>
 
